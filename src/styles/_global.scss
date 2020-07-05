@@ -1,0 +1,13 @@
+@import "./config/config";
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: $system-font;
+    padding: 0;
+    margin: 0;
+}

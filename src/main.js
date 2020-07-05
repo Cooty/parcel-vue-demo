@@ -1,3 +1,5 @@
+import "./styles/_global.scss";
+
 import Vue from "vue";
 import App from "./components/App.vue";
 

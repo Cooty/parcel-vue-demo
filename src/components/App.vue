@@ -1,46 +1,34 @@
 <template lang="html">
     <main id="app">
-        <h1>Hello Vue.js App</h1>
+        <h>Hello Vue.js App</h>
+
+        <h :priority=2>Second level heading</h>
+
+        <h :priority=3>Third level heading</h>
 
         <btn label="My Button" type="submit"></btn>
-        <btn label="My Other Button"></btn>
+        <btn label="My Other Button" modifier-class="light"></btn>
     </main>
 </template>
 
 <script>
-import Btn from "./Btn.vue";
+    import Btn from "./Btn.vue";
+    import H from "./H.vue";
 
-export default {
-    name: "app",
-    components: {
-        Btn
+    export default {
+        name: "app",
+        components: {
+            Btn,
+            H
+        }
     }
-}
 </script>
 
 <style lang="scss">
     @import "../styles/config/config";
 
-    html,
-    body,
     #app {
         width: 100%;
         height: 100%;
-    }
-    
-    body {
-        font-family: $system-font;
-        padding: 0;
-        margin: 0;
-    }
-
-    #app {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    h1 {
-        font-weight: 300;
     }
 </style>
