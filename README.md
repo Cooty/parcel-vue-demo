@@ -1,2 +1,2 @@
 # parcel-vue-demo
-Demo app for Parcel module bundler usage wiht Vue.js framework
+Demo app for [Parcel module bundler](https://parceljs.org/) usage wiht [Vue.js](https://vuejs.org/) framework.
